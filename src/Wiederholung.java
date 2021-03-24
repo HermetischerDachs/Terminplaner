@@ -11,6 +11,7 @@ public class Wiederholung {
         Scanner scanner = new Scanner(System.in);
         String filepath = "src/data.txt";
 
+
         System.out.println("Terminplaner");
         while (true) {
             System.out.println(
@@ -62,7 +63,38 @@ public class Wiederholung {
     }
 
     public static void eintragBearbeiten(String filepath){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welchen Eintrag bearbeiten?");
+        String toChange = scanner.nextLine();
+        System.out.println("Zu was ändern?");
+        String changed = scanner.nextLine();
+        String filepathCopy = "src/data_copy.txt";
 
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(filepathCopy, true))){    //Reader auf Original, Writer auf Kopie
+            BufferedReader br = new BufferedReader(new FileReader(filepath));
+            if (!correctFormat(changed)){               //Eingabe im richtigen Format
+                br.close();
+                bw.close();
+                Files.delete(Paths.get(filepathCopy));          //Original löschen
+                throw new Exception ("Auf korrektes Format achten");
+            }
+            String line;
+            while ((line=br.readLine()) != null){       //Zu bearbeitendenden Eintrag rüberkopieren
+                if(line.equals(toChange)){
+                    bw.write(changed + "\n");
+                    continue;
+                }
+                bw.write(line + "\n");              //Eintrag in die Kopie schreiben
+            }
+            bw.close();                                 //IO-Objekte wieder schließen
+            br.close();
+            Files.delete(Paths.get(filepath));          //Original löschen
+            Files.move(Paths.get(filepathCopy), Paths.get(filepath));   //Kopie umbenennen
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 
     public static void eintragLoeschen(String filepath){
