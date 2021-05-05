@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="956a43c5-f193-4cab-bb05-826931710f38" name="Default Changelist" comment="" />
+    <list default="true" id="956a43c5-f193-4cab-bb05-826931710f38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ButtonMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Terminplaner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Planer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Planer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Planer/Wiederholung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Planer/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Planer/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wiederholung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,15 +27,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1pvgOzbpbivzpoQ7mCSIrdFdleQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java/javafx-sdk-11.0.2" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -38,9 +58,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Wiederholung">
+  <component name="RunManager" selected="Application.Terminplaner">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Core" />
+      <module name="Planer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Terminplaner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Terminplaner" />
       <module name="Planer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Terminplaner" />
         <item itemvalue="Application.Wiederholung" />
         <item itemvalue="Application.Core" />
       </list>
@@ -73,6 +101,19 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -80,27 +121,6 @@
           <url>file://$PROJECT_DIR$/src/Core.java</url>
           <line>14</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Wiederholung.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Wiederholung.java</url>
-          <line>90</line>
-          <properties class="Wiederholung" method="inhaltAusgeben">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Wiederholung.java</url>
-          <line>101</line>
-          <properties class="Wiederholung" method="correctFormat">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
